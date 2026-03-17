@@ -5,7 +5,7 @@ const FORM_URL = 'https://script.google.com/macros/s/AKfycbwHlV3ADLDbcbl8cU3PFvH
 const RESULT_URL = '#' // placeholder
 
 const clinics = [
-  { id: 1, name: 'บันทึกผลการตรวจ', icon: '🩺', desc: 'ตรวจโรคทุกคลีนิค' },
+  { id: 1, name: 'บันทึกผลการตรวจ', icon: '🩺', desc: 'ตรวจโรคทุกคลินิก' },
 ]
 
 export default function App() {
