@@ -2,10 +2,10 @@ import { useState } from 'react'
 import './App.css'
 
 const FORM_URL = 'https://script.google.com/macros/s/AKfycbwHlV3ADLDbcbl8cU3PFvH041c3FND2Nh-ForkL9zTTB_BEZo7fq7O_iLFKX1xyPfYsIw/exec'
-const RESULT_URL = '#' // placeholder
+const RESULT_URL = 'https://script.google.com/macros/s/AKfycbx28_jRXrvTU5mQj1_YbHc_NZkJpiL-_MLLR9LJszy1EooksfrzIYZTNOhBG0Rk5dDkaQ/exec' // placeholder
 
 const clinics = [
-  { id: 1, name: 'บันทึกผลการตรวจ', icon: '🩺', desc: 'ตรวจโรคทุกคลินิก' },
+  { id: 1, name: 'บันทึกผลการตรวจ', icon: '🩺', desc: 'ตรวจโรคทุกคลินิก' }, 
 ]
 
 export default function App() {
