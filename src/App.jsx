@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 
 const FORM_URL = 'https://script.google.com/macros/s/AKfycbxsKHu4hV9kmU0OQDA5KxjKkxJEqq4ItwjNduEZLhQT3kUJfH9OqFOngyjQTr0ZVHxMBA/exec'
-const RESULT_URL = 'https://script.google.com/macros/s/AKfycbxM9Uuc8yCVmiaVeC6L81_yDeXge85h2KDsWnbaVTUYs8TGgrwbUebQmRTgHq9vHwkCRw/exec' // placeholder
+const RESULT_URL = 'https://script.google.com/macros/s/AKfycbzjabb3zfalCD9iBYqsNletVGbjEdaR07WvFxpKzXaUQPuupdL-mnJgN2DzAgbvdiA/exec' // placeholder
 
 const clinics = [
   { id: 1, name: 'บันทึกผลการตรวจ', icon: '🩺', desc: 'ตรวจโรคทุกคลินิก' }, 
