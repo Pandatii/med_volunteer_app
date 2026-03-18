@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 
 const FORM_URL = 'https://script.google.com/macros/s/AKfycbw_xyJI326zMo4CE_zsk2efksVNf4cdH3sW34O0Q6N9ASiMn0CP6EHdWzBdKoB7Q7j02Q/exec'
@@ -10,9 +10,23 @@ const clinics = [
 
 export default function App() {
   const [tab, setTab] = useState('form')
+  const [clock, setClock] = useState('')
+
+  useEffect(() => {
+    function updateClock() {
+      const now  = new Date()
+      const date = now.toLocaleDateString('th-TH', { day:'2-digit', month:'long', year:'numeric' })
+      const time = now.toLocaleTimeString('th-TH', { hour:'2-digit', minute:'2-digit', second:'2-digit', hour12:false })
+      setClock(date + '  |  ' + time)
+    }
+    updateClock()
+    const id = setInterval(updateClock, 1000)
+    return () => clearInterval(id)
+  }, [])
 
   return (
     <div className="app">
+      <div class="clock-bar" id="clock"></div>
       <header className="header">
         <div className="header-inner">
           <div className="logo-mark">✚</div>
@@ -20,7 +34,9 @@ export default function App() {
             <h1 className="title">ระบบจัดการคลินิก</h1>
             <p className="subtitle">โครงการแพทย์อาสา ณ วัดชลประทานฯ</p>
           </div>
+          <div className="clock">{clock}</div>
         </div>
+        
       </header>
 
       <nav className="tab-bar">
@@ -40,6 +56,7 @@ export default function App() {
 
       <footer className="footer">
         <p>โครงการแพทย์อาสา &nbsp;|&nbsp; วัดชลประทานรังสฤษฎ์</p>
+        <div class="clock-bar" id="clock"></div>
       </footer>
     </div>
   )
