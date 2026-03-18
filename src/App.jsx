@@ -32,7 +32,7 @@ export default function App() {
           <div className="logo-mark">✚</div>
           <div className="header-text">
             <h1 className="title">ระบบจัดการคลินิก</h1>
-            <p className="subtitle">โครงการแพทย์อาสา ณ วัดชลประทานฯ</p>
+            <p className="subtitle">โครงการแพทย์อาสา ณ วัดชลประทานรังสฤษฎ์</p>
           </div>
           <div className="clock">{clock}</div>
         </div>
