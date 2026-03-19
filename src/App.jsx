@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import './App.css'
 
 const FORM_URL = 'https://script.google.com/macros/s/AKfycbxfam_VE45v3oEv8LreeU0i-FFPeUK77Ridi_nDk7ZvOd2W6_wzLIMq-HM1e3e1mhC12Q/exec'
-const RESULT_URL = 'https://script.google.com/macros/s/AKfycbzo0WDaT_VmX6118gaZI8stkM7-TlhtFW_RSPov1l0L5EOu2jJ_r5XkZuWt5F7VeTkUkA/exec' 
+const RESULT_URL = 'https://script.google.com/macros/s/AKfycbzcnhXAIgVzxdOfcOkwxzdZ0nxKWUFnZEp5D4NV_1R1DGu6KJ6teTgmFOx0kvCS1kYwpA/exec' 
 
 const clinics = [
   { id: 1, name: 'บันทึกผลการตรวจ', icon: '🩺', desc: 'ตรวจโรคทุกคลินิก' }, 
