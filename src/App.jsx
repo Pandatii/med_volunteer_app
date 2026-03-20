@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 
-const FORM_URL = 'https://script.google.com/macros/s/AKfycbyZcaY3CWyOcM7rpK8IpsMTOjT1BHXXQFdi5YTa_ROZ-TH0orC2-zzI3wQrI0DQAvKbhA/exec'
+const FORM_URL = 'https://script.google.com/macros/s/AKfycbybGzHfDg1VFZmdMFWAlVWVniItrdrKtvpDVwN9o4ST7831LGTdbP6w-G5n2htDvBrCTA/exec'
 const RESULT_URL = 'https://script.google.com/macros/s/AKfycbzcnhXAIgVzxdOfcOkwxzdZ0nxKWUFnZEp5D4NV_1R1DGu6KJ6teTgmFOx0kvCS1kYwpA/exec' 
 
 const clinics = [
