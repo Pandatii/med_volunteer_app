@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 
-const FORM_URL = 'https://script.google.com/macros/s/AKfycbybGzHfDg1VFZmdMFWAlVWVniItrdrKtvpDVwN9o4ST7831LGTdbP6w-G5n2htDvBrCTA/exec'
-const RESULT_URL = 'https://script.google.com/macros/s/AKfycbzcnhXAIgVzxdOfcOkwxzdZ0nxKWUFnZEp5D4NV_1R1DGu6KJ6teTgmFOx0kvCS1kYwpA/exec' 
+const FORM_URL = 'https://script.google.com/macros/s/AKfycbyfXKUjWVOallDbbrAla2HXfdvcbBhk1S8Ao0OQvpiNpgkdHQv2bej00weKrxp-Vpqvdw/exec'
+const RESULT_URL = 'https://script.google.com/macros/s/AKfycbw8WDubdxSX2srm-vuNbuOZylRs6pwf6YqaJdgIFzoQZBMdZ4tRikJceBNNeMPWQiPNaA/exec' 
 
 const clinics = [
   { id: 1, name: 'บันทึกผลการตรวจ', icon: '🩺', desc: 'ตรวจโรคทุกคลินิก' }, 
