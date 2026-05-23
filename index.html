@@ -396,7 +396,7 @@ function updateReconTable() {
     const opdList = opdByDay[d];
     const opdSum = opdList ? opdList.reduce((a,c)=>a+c.val,0) : null;
     const vsRatio  = vs   ? Math.round(vs/r*100)+'%' : '—';
-    const opdRatio = opdSum ? Math.round(opdSum/r*100)+'%' : '—';
+    const opdRatio = opdSum ? (opdSum/r).toFixed(1) : '—';
     let badge = '';
     if (vs && opdSum) badge = '<span class="badge badge-ok"><span class="badge-dot"></span>ครบทั้ง 3 ยอด</span>';
     else if (vs)       badge = '<span class="badge badge-warn"><span class="badge-dot"></span>รอข้อมูล OPD</span>';
